@@ -355,7 +355,7 @@ html, body {
   font-size: 100%; }
 
 body {
-  background: #fff;
+  background: #f8f7ed;
   color: #222;
   padding: 0;
   margin: 0;
@@ -417,7 +417,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  max-width: 100%;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
@@ -3834,9 +3834,9 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333; }
+  background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
   .contain-to-grid .top-bar {
-    margin-bottom: 0; }
+    margin-bottom: 1rem; }
 
 .fixed {
   width: 100%;
@@ -3862,8 +3862,8 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #333;
-  margin-bottom: 0; }
+  background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  margin-bottom: 1rem; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
@@ -3937,7 +3937,7 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #333; }
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
     .top-bar.expanded .toggle-topbar a {
       color: #888; }
       .top-bar.expanded .toggle-topbar a::after {
@@ -4122,7 +4122,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width:40.063em) {
   .top-bar {
-    background: #333;
+    background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -4141,11 +4141,11 @@ meta.foundation-mq-topbar {
       position: relative;
       top: 7px; }
     .top-bar.expanded {
-      background: #333; }
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 100%;
     margin: 0 auto;
-    margin-bottom: 0; }
+    margin-bottom: 1rem; }
   .top-bar-section {
     transition: none 0 0;
     left: 0 !important; }
@@ -4163,7 +4163,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #333; }
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background: #272727; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -4240,7 +4240,7 @@ meta.foundation-mq-topbar {
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: #333;
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
       padding: 0 15px;
       height: 45px; }
     .top-bar-section .right li .dropdown {
@@ -5056,4 +5056,57 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/* all app scss styles here */
+/* Personalizar */
+.skip {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
+
+header div {
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem; }
+  header div img {
+    float: left;
+    max-width: 370px;
+    margin-right: 10px; }
+
+h1 {
+  color: #376850;
+  float: left; }
+  h1 span {
+    font-size: 80%;
+    line-height: 3.5rem; }
+    h1 span small {
+      display: block;
+      color: #376850;
+      margin-left: 2px;
+      margin-top: 4px;
+      font-size: 55%; }
+
+#menu {
+  padding-left: 0;
+  padding-right: 0; }
+  #menu .top-bar {
+    margin-bottom: 1.875rem;
+    background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%); }
+    #menu .top-bar strong {
+      font-size: 110%; }
+
+@media only screen and (max-width: 40em) {
+  header div img {
+    max-width: 100%; } }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  header img {
+    max-width: 370px; } }
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  header img {
+    max-width: 400px; } }
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+@media only screen and (min-width: 120.063em) { }

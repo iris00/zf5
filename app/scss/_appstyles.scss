@@ -1,1 +1,50 @@
-/* all app scss styles here */
+/* Personalizar */
+
+// Generales
+.skip {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+//Cabecera
+header div {
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  img {
+    float: left;
+    max-width: 370px;
+    margin-right: 10px;
+  }
+}
+
+h1 {
+  color: #376850;
+  float: left;
+  span {
+    font-size: 80%;
+    line-height: 3.5rem;
+    small {
+      display: block;
+      color: #376850;
+      margin-left: 2px;
+      margin-top: 4px;
+      font-size: 55%;
+    }
+  }
+}
+
+#menu {
+  padding-left: 0;
+  padding-right: 0;
+  .top-bar {
+    margin-bottom: 1.875rem;
+    background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%);
+    strong {
+      font-size: 110%;
+    }
+  }
+}

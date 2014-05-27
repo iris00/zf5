@@ -1,0 +1,6 @@
+// Define mobile styles (mobile first), min-width 641px
+@media only screen and (max-width: 40em) {
+  header div img {
+    max-width: 100%;
+  }
+}
