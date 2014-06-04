@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				options: {
-					outputStyle: 'extended'
+					outputStyle: 'extended',
+					sourceMap: true
 				},
 				files: {
 					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
@@ -161,6 +162,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
-	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-sass', 'clean:dist', /*'validate-js',*/ 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

@@ -41,10 +41,10 @@ $row-width: 100%;
 // Global
 
 // We use these to control various global styles
-// $body-bg: #fff;
-$body-bg: #f8f7ed;
+//$body-bg: #f8f7ed;
 
-// $body-font-color: #222;
+$body-font-color: black;
+
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -58,8 +58,11 @@ $body-bg: #f8f7ed;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+$primary-color: #376850;
+$primary-dark-color: darken($primary-color, 25%);
+$primary-light-color: lighten($primary-color, 68%);
+$secondary-color: #cedcd2;
+
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -1167,13 +1170,12 @@ $body-bg: #f8f7ed;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: $primary-color;
 
-// $topbar-bg: $topbar-bg-color;
-$topbar-bg: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+$topbar-bg: linear-gradient(to bottom, $topbar-bg-color 0%, $topbar-bg-color 88%, #7cbf8d 96%, $topbar-bg-color 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 45px;
 $topbar-margin-bottom: 1rem;
 
 // Controlling the styles for the title in the top bar
@@ -1181,29 +1183,35 @@ $topbar-margin-bottom: 1rem;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+$topbar-dropdown-bg: $secondary-color;
+
+$topbar-dropdown-link-color: black;
+$topbar-dropdown-link-bg: $secondary-color;
+
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
+// $topbar-dropdown-toggle-color: red;
+
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
+$topbar-link-color-hover: $body-font-color;
+
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
-// $topbar-link-weight: normal;
+$topbar-link-weight: bold;
+
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: #272727;
+$topbar-link-bg-hover: $secondary-color;
+
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: $topbar-height / 3;
+$topbar-link-padding: 9px;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
@@ -1220,8 +1228,8 @@ $topbar-margin-bottom: 1rem;
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
 // $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-link-color-toggled: #d9d9d9;
+$topbar-menu-icon-color-toggled: #d9d9d9;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
@@ -1230,8 +1238,9 @@ $topbar-margin-bottom: 1rem;
 // $topbar-media-query: $medium-up;
 
 // Divider Styles
-// $topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
-// $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
+$topbar-divider-border-bottom: solid 1px scale-color($topbar-bg-color, $lightness: 13%);
+
+$topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: 13%);
 
 // Sticky Class
 // $topbar-sticky-class: ".sticky";

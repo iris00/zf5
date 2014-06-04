@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+// PEQUEÑOS
+@media #{$small-only} {
+  header div {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  #menu .top-bar-section ul li > a {
+    color: black;
+  }
+  .slider {
+    display: none;
+  }
+}
+
+@media #{$small-up} {}
+
+// MEDIANOS
+
+@media #{$medium-only} {}
+
+@media #{$medium-up} {
+  header div img {
+    max-width: 370px;
+  }
+}
+
+// GRANDES
+
+@media #{$large-only} {}
+
+@media #{$large-up} {
+  header div img {
+    max-width: 400px;
+  }
+}
+
+// MÁS GRANDES
+
+@media #{$xlarge-only} {}
+
+@media #{$xlarge-up} {}
+
+// EXTRA GRANDES
+
+@media #{$xxlarge-only} {}
+
+@media #{$xxlarge-up} {}

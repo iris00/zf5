@@ -1,6 +1,11 @@
-/* Personalizar */
+@charset "UTF-8";
 
-// Generales
+/* Personalizar */
+//  _______________________ Defaults
+body {
+  overflow-y: scroll;
+}
+
 .skip {
   height: 1px;
   left: -10000px;
@@ -10,19 +15,52 @@
   width: 1px;
 }
 
-//Cabecera
-header div {
-  margin-top: 0.9375rem;
-  margin-bottom: 0.9375rem;
+.banners {
+  margin: 0;
+  padding: 0;
+  ul {
+    text-align: center;
+    margin: 0;
+  }
   img {
-    float: left;
-    max-width: 370px;
-    margin-right: 10px;
+    border: 1px solid white;
+    margin: 15px 0;
+    box-shadow: 0px 0px 3px 2px rgba(50, 50, 50, 0.2);
   }
 }
 
-h1 {
-  color: #376850;
+// _______________________ Header
+header {
+  @extend .row;
+  background-color: #f8f7ed;
+  a.dropdown.secondary.idiomas {
+    @extend .button;
+    right: $column-gutter + 1;
+    top: $column-gutter / 3;
+    z-index: 100;
+    font-size: .85rem;
+    background-color: transparent;
+    position: absolute;
+    &:before {
+      right: 2.2rem;
+    }
+    &:hover, &:active, &:visited, &:link {
+      background-color: transparent;
+    }
+  }
+  .columns {
+    margin-top: $column-gutter / 2;
+    margin-bottom: $column-gutter / 2;
+    img {
+      float: left;
+      margin-right: $column-gutter / 3;
+      max-width: 400px;
+    }
+  }
+}
+
+header h1 {
+  color: $primary-color;
   float: left;
   span {
     font-size: 80%;
@@ -40,11 +78,74 @@ h1 {
 #menu {
   padding-left: 0;
   padding-right: 0;
-  .top-bar {
-    margin-bottom: 1.875rem;
-    background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%);
-    strong {
-      font-size: 110%;
-    }
+  strong {
+    font-size: 110%;
   }
+  i.fa {
+    font-size: 1.4rem;
+  }
+}
+
+.top-bar-section ul:hover .has-dropdown > a:after {
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+}
+
+// _______________________ Aside
+aside .accordion {
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  .content.active {
+    background-color: $primary-light-color;
+  }
+  dd > a, dd.active > a, dd > a:hover {
+    background-color: $secondary-color;
+    border-bottom: 1px solid $primary-light-color;
+    color: $primary-dark-color;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+// _______________________ Article
+
+// Slider home
+ul.slider {
+  margin-left: 0;
+  figure {
+    margin: 0;
+    position: relative;
+  }
+  figcaption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+// _______________________ Footer
+body > footer {
+  background-color: #efefef;
+  @extend .row;
+}
+
+// sticky footer
+.wrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.wrap:after {
+  content: '';
+  display: block;
+}
+
+body > footer, .wrap:after {
+  height: 100px;
 }
