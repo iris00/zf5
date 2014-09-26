@@ -1,0 +1,73 @@
+.icon_circulo-large {
+	width: 51px;
+	height: 51px;
+	background-position: 0 0;
+}
+
+.icon_cuadrado-large {
+	width: 51px;
+	height: 51px;
+	background-position: -54px 0;
+}
+
+.icon_cuadrado2-large {
+	width: 51px;
+	height: 51px;
+	background-position: -108px 0;
+}
+
+.icon_estrella-large {
+	width: 51px;
+	height: 51px;
+	background-position: -162px 0;
+}
+
+.icon_hexagono-large {
+	width: 51px;
+	height: 51px;
+	background-position: -216px 0;
+}
+
+.icon_circulo-large, .icon_cuadrado-large, .icon_cuadrado2-large, .icon_estrella-large, .icon_hexagono-large {
+	background-image: url("../img/icons/icons-sprite-large.png");
+	background-size: 270px 54px;
+}
+
+.icon_circulo-small {
+	width: 34px;
+	height: 34px;
+	background-position: 0 0;
+}
+
+.icon_cuadrado-small {
+	width: 34px;
+	height: 34px;
+	background-position: -36px 0;
+}
+
+.icon_cuadrado2-small {
+	width: 34px;
+	height: 34px;
+	background-position: -72px 0;
+}
+
+.icon_estrella-small {
+	width: 34px;
+	height: 34px;
+	background-position: -108px 0;
+}
+
+.icon_hexagono-small {
+	width: 34px;
+	height: 34px;
+	background-position: -144px 0;
+}
+
+.icon_circulo-small, .icon_cuadrado-small, .icon_cuadrado2-small, .icon_estrella-small, .icon_hexagono-small {
+	background-image: url("../img/icons/icons-sprite-small.png");
+	background-size: 180px 36px;
+}
+
+.svg .icon_circulo-large, .svg .icon_cuadrado-large, .svg .icon_cuadrado2-large, .svg .icon_estrella-large, .svg .icon_hexagono-large, .svg .icon_circulo-small, .svg .icon_cuadrado-small, .svg .icon_cuadrado2-small, .svg .icon_estrella-small, .svg .icon_hexagono-small {
+	background-image: url("../img/icons/icons-sprite.svg");
+}

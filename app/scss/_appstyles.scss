@@ -1,18 +1,28 @@
 @charset "UTF-8";
 
 /* Personalizar */
-//  _______________________ Defaults
+// Defaults _______________________________________________________________________
 body {
   overflow-y: scroll;
+  * a:focus {
+    //outline: 0;
+    text-decoration: underline;
+  }
 }
 
 .skip {
-  height: 1px;
   left: -10000px;
-  overflow: hidden;
+  padding: 6px;
   position: absolute;
-  top: auto;
-  width: 1px;
+  background-color: $primary-color;
+  transition: left 1s ease-out 0s, background 1s linear 0s;
+  z-index: 100;
+}
+
+a.skip:focus {
+  left: 0;
+  transition: left 0.1s ease-in 0s, background 0.5s linear 0s;
+  color: #FFFFFF;
 }
 
 .banners {
@@ -29,11 +39,16 @@ body {
   }
 }
 
-// _______________________ Header
+// Font icons
+.fa {
+  vertical-align: middle;
+}
+
+// Header _______________________________________________________________________
 header {
   @extend .row;
   background-color: #f8f7ed;
-  a.dropdown.secondary.idiomas {
+  a.dropdown.idiomas {
     @extend .button;
     right: $column-gutter + 1;
     top: $column-gutter / 3;
@@ -57,24 +72,24 @@ header {
       max-width: 400px;
     }
   }
-}
-
-header h1 {
-  color: $primary-color;
-  float: left;
-  span {
-    font-size: 80%;
-    line-height: 3.5rem;
-    small {
-      display: block;
-      color: #376850;
-      margin-left: 2px;
-      margin-top: 4px;
-      font-size: 55%;
+  h1 {
+    color: $primary-color;
+    float: left;
+    span {
+      font-size: 80%;
+      line-height: 3.5rem;
+      small {
+        display: block;
+        color: #376850;
+        margin-left: 2px;
+        margin-top: 4px;
+        font-size: 55%;
+      }
     }
   }
 }
 
+// Navigation _______________________________________________________________________
 #menu {
   padding-left: 0;
   padding-right: 0;
@@ -86,30 +101,47 @@ header h1 {
   }
 }
 
-.top-bar-section ul:hover .has-dropdown > a:after {
-  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+.top-bar-section {
+  ul:hover .has-dropdown > a:after {
+    border-color: rgba(0, 0, 0, 0.4) transparent transparent;
+  }
+  ul li.has-form .button {
+    background-color: $primary-dark-color;
+  }
+  ul li li:not(.has-form) a:not(.button) {
+    border-bottom: 1px solid $primary-light-color;
+    border-left: 1px solid $primary-light-color;
+    font-size: .9rem;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .dropdown li.title p a {
+    color: $color-grey-20;
+    font-weight: bold;
+    line-height: 22.5px;
+    display: block;
+  }
 }
 
-// _______________________ Aside
+// Aside _______________________________________________________________________
 aside .accordion {
-  .row {
-    padding: 0;
-    margin: 0;
-  }
-  .content.active {
-    background-color: $primary-light-color;
-  }
-  dd > a, dd.active > a, dd > a:hover {
-    background-color: $secondary-color;
-    border-bottom: 1px solid $primary-light-color;
-    color: $primary-dark-color;
+  dd > a, dd.active > a {
+    border-radius: 4px;
+    margin-bottom: 2px;
   }
   ul {
     list-style-type: none;
   }
+  .fa {
+    font-size: 1.8rem;
+    padding-right: .5rem;
+    color: $primary-dark-color;
+    opacity: 0.7;
+  }
 }
 
-// _______________________ Article
+// Article _______________________________________________________________________
 
 // Slider home
 ul.slider {
@@ -129,7 +161,7 @@ ul.slider {
   }
 }
 
-// _______________________ Footer
+// Footer _______________________________________________________________________
 body > footer {
   background-color: #efefef;
   @extend .row;
@@ -139,11 +171,10 @@ body > footer {
 .wrap {
   min-height: 100%;
   margin-bottom: -100px;
-}
-
-.wrap:after {
-  content: '';
-  display: block;
+  &:after {
+    content: '';
+    display: block;
+  }
 }
 
 body > footer, .wrap:after {

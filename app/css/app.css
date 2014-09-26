@@ -356,7 +356,7 @@ html, body {
 
 body {
   background: #fff;
-  color: black;
+  color: #333333;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -411,7 +411,7 @@ textarea {
 select {
   width: 100%; }
 
-.row, header, body > footer {
+.row {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -419,18 +419,18 @@ select {
   margin-bottom: 0;
   max-width: 100%;
   *zoom: 1; }
-  .row:before, header:before, body > footer:before, .row:after, header:after, body > footer:after {
+  .row:before, .row:after {
     content: " ";
     display: table; }
-  .row:after, header:after, body > footer:after {
+  .row:after {
     clear: both; }
-  .row.collapse > .column, .row.collapse > header.collapse, .row.collapse > body > footer.collapse, body > .row.collapse > footer.collapse, .row.collapse > .columns, .row.collapse > header.collapse, .row.collapse > body > footer.collapse, body > .row.collapse > footer.collapse {
+  .row.collapse > .column, .row.collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
-  .row.collapse .row, .row.collapse header.collapse, .row.collapse body > footer.collapse, body > .row.collapse footer.collapse, .row.collapse header, .row.collapse body > footer, body > .row.collapse footer {
+  .row.collapse .row {
     margin-left: 0;
     margin-right: 0; }
-  .row .row, .row header, .row body > footer, body > .row footer, .row header, .row body > footer, body > .row footer {
+  .row .row {
     width: auto;
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
@@ -438,20 +438,20 @@ select {
     margin-bottom: 0;
     max-width: none;
     *zoom: 1; }
-    .row .row:before, .row header, .row body > footer, body > .row footer, .row header:before, .row body > footer:before, body > .row footer:before, .row .row:after, .row header, .row body > footer, body > .row footer, .row header:after, .row body > footer:after, body > .row footer:after {
+    .row .row:before, .row .row:after {
       content: " ";
       display: table; }
-    .row .row:after, .row header, .row body > footer, body > .row footer, .row header:after, .row body > footer:after, body > .row footer:after {
+    .row .row:after {
       clear: both; }
-    .row .row.collapse, .row header, .row body > footer, body > .row footer, .row header.collapse, .row body > footer.collapse, body > .row footer.collapse {
+    .row .row.collapse {
       width: auto;
       margin: 0;
       max-width: none;
       *zoom: 1; }
-      .row .row.collapse:before, .row header, .row body > footer, body > .row footer, .row header.collapse:before, .row body > footer.collapse:before, body > .row footer.collapse:before, .row .row.collapse:after, .row header, .row body > footer, body > .row footer, .row header.collapse:after, .row body > footer.collapse:after, body > .row footer.collapse:after {
+      .row .row.collapse:before, .row .row.collapse:after {
         content: " ";
         display: table; }
-      .row .row.collapse:after, .row header, .row body > footer, body > .row footer, .row header.collapse:after, .row body > footer.collapse:after, body > .row footer.collapse:after {
+      .row .row.collapse:after {
         clear: both; }
 
 .column, .columns {
@@ -1177,22 +1177,22 @@ select {
     display: block;
     margin-bottom: 0 !important; }
     .accordion dd.active > a {
-      background: #e8e8e8; }
+      background: #c7d7cb; }
     .accordion dd > a {
-      background: #efefef;
-      color: #222;
+      background: #cedcd2;
+      color: #333333;
       padding: 1rem;
       display: block;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-      font-size: 1rem; }
+      font-size: 1.0625rem; }
       .accordion dd > a:hover {
-        background: #e3e3e3; }
+        background: #c2d3c7; }
   .accordion .content {
     display: none;
     padding: 0.9375rem; }
     .accordion .content.active {
       display: block;
-      background: #fff; }
+      background: #fcfefd; }
 
 .alert-box {
   border-style: solid;
@@ -1568,7 +1568,7 @@ select {
       content: " ";
       margin: 0; }
 
-button, .button, header a.dropdown.secondary.idiomas {
+button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
@@ -1591,121 +1591,121 @@ button, .button, header a.dropdown.secondary.idiomas {
   border-color: #2c5340;
   color: #fff;
   transition: background-color 300ms ease-out; }
-  button:hover, button:focus, .button:hover, header a.dropdown.secondary.idiomas:hover, .button:focus, header a.dropdown.secondary.idiomas:focus {
+  button:hover, button:focus, .button:hover, .button:focus {
     background-color: #2c5340; }
-  button:hover, button:focus, .button:hover, header a.dropdown.secondary.idiomas:hover, .button:focus, header a.dropdown.secondary.idiomas:focus {
+  button:hover, button:focus, .button:hover, .button:focus {
     color: #fff; }
-  button.secondary, .button.secondary, header a.secondary.dropdown.idiomas {
+  button.secondary, .button.secondary {
     background-color: #cedcd2;
     border-color: #9cb9a4;
     color: #333; }
-    button.secondary:hover, button.secondary:focus, .button.secondary:hover, header a.secondary.dropdown.idiomas:hover, .button.secondary:focus, header a.secondary.dropdown.idiomas:focus {
+    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       background-color: #9cb9a4; }
-    button.secondary:hover, button.secondary:focus, .button.secondary:hover, header a.secondary.dropdown.idiomas:hover, .button.secondary:focus, header a.secondary.dropdown.idiomas:focus {
+    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       color: #333; }
-  button.success, .button.success, header a.success.dropdown.secondary.idiomas {
+  button.success, .button.success {
     background-color: #43AC6A;
     border-color: #368a54;
     color: #fff; }
-    button.success:hover, button.success:focus, .button.success:hover, header a.success.dropdown.secondary.idiomas:hover, .button.success:focus, header a.success.dropdown.secondary.idiomas:focus {
+    button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       background-color: #368a54; }
-    button.success:hover, button.success:focus, .button.success:hover, header a.success.dropdown.secondary.idiomas:hover, .button.success:focus, header a.success.dropdown.secondary.idiomas:focus {
+    button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: #fff; }
-  button.alert, .button.alert, header a.alert.dropdown.secondary.idiomas {
+  button.alert, .button.alert {
     background-color: #f04124;
     border-color: #cf280e;
     color: #fff; }
-    button.alert:hover, button.alert:focus, .button.alert:hover, header a.alert.dropdown.secondary.idiomas:hover, .button.alert:focus, header a.alert.dropdown.secondary.idiomas:focus {
+    button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       background-color: #cf280e; }
-    button.alert:hover, button.alert:focus, .button.alert:hover, header a.alert.dropdown.secondary.idiomas:hover, .button.alert:focus, header a.alert.dropdown.secondary.idiomas:focus {
+    button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: #fff; }
-  button.large, .button.large, header a.large.dropdown.secondary.idiomas {
+  button.large, .button.large {
     padding-top: 1.125rem;
     padding-right: 2.25rem;
     padding-bottom: 1.1875rem;
     padding-left: 2.25rem;
     font-size: 1.25rem; }
-  button.small, .button.small, header a.small.dropdown.secondary.idiomas {
+  button.small, .button.small {
     padding-top: 0.875rem;
     padding-right: 1.75rem;
     padding-bottom: 0.9375rem;
     padding-left: 1.75rem;
     font-size: 0.8125rem; }
-  button.tiny, .button.tiny, header a.tiny.dropdown.secondary.idiomas {
+  button.tiny, .button.tiny {
     padding-top: 0.625rem;
     padding-right: 1.25rem;
     padding-bottom: 0.6875rem;
     padding-left: 1.25rem;
     font-size: 0.6875rem; }
-  button.expand, .button.expand, header a.expand.dropdown.secondary.idiomas {
+  button.expand, .button.expand {
     padding-right: 0;
     padding-left: 0;
     width: 100%; }
-  button.left-align, .button.left-align, header a.left-align.dropdown.secondary.idiomas {
+  button.left-align, .button.left-align {
     text-align: left;
     text-indent: 0.75rem; }
-  button.right-align, .button.right-align, header a.right-align.dropdown.secondary.idiomas {
+  button.right-align, .button.right-align {
     text-align: right;
     padding-right: 0.75rem; }
-  button.radius, .button.radius, header a.radius.dropdown.secondary.idiomas {
+  button.radius, .button.radius {
     border-radius: 3px; }
-  button.round, .button.round, header a.round.dropdown.secondary.idiomas {
+  button.round, .button.round {
     border-radius: 1000px; }
-  button.disabled, button[disabled], .button.disabled, header a.disabled.dropdown.secondary.idiomas, .button[disabled], header a[disabled].dropdown.secondary.idiomas {
+  button.disabled, button[disabled], .button.disabled, .button[disabled] {
     background-color: #376850;
     border-color: #2c5340;
     color: #fff;
     cursor: default;
     opacity: 0.7;
     box-shadow: none; }
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, header a.disabled.dropdown.secondary.idiomas:hover, .button.disabled:focus, header a.disabled.dropdown.secondary.idiomas:focus, .button[disabled]:hover, header a[disabled].dropdown.secondary.idiomas:hover, .button[disabled]:focus, header a[disabled].dropdown.secondary.idiomas:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: #2c5340; }
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, header a.disabled.dropdown.secondary.idiomas:hover, .button.disabled:focus, header a.disabled.dropdown.secondary.idiomas:focus, .button[disabled]:hover, header a[disabled].dropdown.secondary.idiomas:hover, .button[disabled]:focus, header a[disabled].dropdown.secondary.idiomas:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: #fff; }
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, header a.disabled.dropdown.secondary.idiomas:hover, .button.disabled:focus, header a.disabled.dropdown.secondary.idiomas:focus, .button[disabled]:hover, header a[disabled].dropdown.secondary.idiomas:hover, .button[disabled]:focus, header a[disabled].dropdown.secondary.idiomas:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: #376850; }
-    button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, header a.disabled.secondary.dropdown.idiomas, .button[disabled].secondary, header a[disabled].secondary.dropdown.idiomas {
+    button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #cedcd2;
       border-color: #9cb9a4;
       color: #333;
       cursor: default;
       opacity: 0.7;
       box-shadow: none; }
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, header a.disabled.secondary.dropdown.idiomas:hover, .button.disabled.secondary:focus, header a.disabled.secondary.dropdown.idiomas:focus, .button[disabled].secondary:hover, header a[disabled].secondary.dropdown.idiomas:hover, .button[disabled].secondary:focus, header a[disabled].secondary.dropdown.idiomas:focus {
+      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         background-color: #9cb9a4; }
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, header a.disabled.secondary.dropdown.idiomas:hover, .button.disabled.secondary:focus, header a.disabled.secondary.dropdown.idiomas:focus, .button[disabled].secondary:hover, header a[disabled].secondary.dropdown.idiomas:hover, .button[disabled].secondary:focus, header a[disabled].secondary.dropdown.idiomas:focus {
+      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         color: #333; }
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, header a.disabled.secondary.dropdown.idiomas:hover, .button.disabled.secondary:focus, header a.disabled.secondary.dropdown.idiomas:focus, .button[disabled].secondary:hover, header a[disabled].secondary.dropdown.idiomas:hover, .button[disabled].secondary:focus, header a[disabled].secondary.dropdown.idiomas:focus {
+      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         background-color: #cedcd2; }
-    button.disabled.success, button[disabled].success, .button.disabled.success, header a.disabled.success.dropdown.secondary.idiomas, .button[disabled].success, header a[disabled].success.dropdown.secondary.idiomas {
+    button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #43AC6A;
       border-color: #368a54;
       color: #fff;
       cursor: default;
       opacity: 0.7;
       box-shadow: none; }
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, header a.disabled.success.dropdown.secondary.idiomas:hover, .button.disabled.success:focus, header a.disabled.success.dropdown.secondary.idiomas:focus, .button[disabled].success:hover, header a[disabled].success.dropdown.secondary.idiomas:hover, .button[disabled].success:focus, header a[disabled].success.dropdown.secondary.idiomas:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         background-color: #368a54; }
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, header a.disabled.success.dropdown.secondary.idiomas:hover, .button.disabled.success:focus, header a.disabled.success.dropdown.secondary.idiomas:focus, .button[disabled].success:hover, header a[disabled].success.dropdown.secondary.idiomas:hover, .button[disabled].success:focus, header a[disabled].success.dropdown.secondary.idiomas:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         color: #fff; }
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, header a.disabled.success.dropdown.secondary.idiomas:hover, .button.disabled.success:focus, header a.disabled.success.dropdown.secondary.idiomas:focus, .button[disabled].success:hover, header a[disabled].success.dropdown.secondary.idiomas:hover, .button[disabled].success:focus, header a[disabled].success.dropdown.secondary.idiomas:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         background-color: #43AC6A; }
-    button.disabled.alert, button[disabled].alert, .button.disabled.alert, header a.disabled.alert.dropdown.secondary.idiomas, .button[disabled].alert, header a[disabled].alert.dropdown.secondary.idiomas {
+    button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
       background-color: #f04124;
       border-color: #cf280e;
       color: #fff;
       cursor: default;
       opacity: 0.7;
       box-shadow: none; }
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, header a.disabled.alert.dropdown.secondary.idiomas:hover, .button.disabled.alert:focus, header a.disabled.alert.dropdown.secondary.idiomas:focus, .button[disabled].alert:hover, header a[disabled].alert.dropdown.secondary.idiomas:hover, .button[disabled].alert:focus, header a[disabled].alert.dropdown.secondary.idiomas:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
         background-color: #cf280e; }
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, header a.disabled.alert.dropdown.secondary.idiomas:hover, .button.disabled.alert:focus, header a.disabled.alert.dropdown.secondary.idiomas:focus, .button[disabled].alert:hover, header a[disabled].alert.dropdown.secondary.idiomas:hover, .button[disabled].alert:focus, header a[disabled].alert.dropdown.secondary.idiomas:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
         color: #fff; }
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, header a.disabled.alert.dropdown.secondary.idiomas:hover, .button.disabled.alert:focus, header a.disabled.alert.dropdown.secondary.idiomas:focus, .button[disabled].alert:hover, header a[disabled].alert.dropdown.secondary.idiomas:hover, .button[disabled].alert:focus, header a[disabled].alert.dropdown.secondary.idiomas:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
         background-color: #f04124; }
 
 @media only screen and (min-width:40.063em) {
-  button, .button, header a.dropdown.secondary.idiomas {
+  button, .button {
     display: inline-block; } }
 
 .button-group {
@@ -1721,97 +1721,97 @@ button, .button, header a.dropdown.secondary.idiomas {
   .button-group li {
     margin: 0;
     float: left; }
-    .button-group li > button, .button-group li .button, .button-group li header a.dropdown.secondary.idiomas, header .button-group li a.dropdown.secondary.idiomas {
+    .button-group li > button, .button-group li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group li:first-child button, .button-group li:first-child .button, .button-group li:first-child header a.dropdown.secondary.idiomas, header .button-group li:first-child a.dropdown.secondary.idiomas {
+    .button-group li:first-child button, .button-group li:first-child .button {
       border-left: 0; }
     .button-group li:first-child {
       margin-left: 0; }
-  .button-group.radius > * > button, .button-group.radius > * .button, .button-group.radius > * header a.dropdown.secondary.idiomas, header .button-group.radius > * a.dropdown.secondary.idiomas {
+  .button-group.radius > * > button, .button-group.radius > * .button {
     border-left: 1px solid;
     border-color: rgba(255, 255, 255, 0.5); }
-  .button-group.radius > *:first-child button, .button-group.radius > *:first-child .button, .button-group.radius > *:first-child header a.dropdown.secondary.idiomas, header .button-group.radius > *:first-child a.dropdown.secondary.idiomas {
+  .button-group.radius > *:first-child button, .button-group.radius > *:first-child .button {
     border-left: 0; }
-  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > header a.dropdown.secondary.idiomas, header .button-group.radius > *:first-child > a.dropdown.secondary.idiomas {
+  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px; }
-  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > header a.dropdown.secondary.idiomas, header .button-group.radius > *:last-child > a.dropdown.secondary.idiomas {
+  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button {
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px; }
-  .button-group.round > * > button, .button-group.round > * .button, .button-group.round > * header a.dropdown.secondary.idiomas, header .button-group.round > * a.dropdown.secondary.idiomas {
+  .button-group.round > * > button, .button-group.round > * .button {
     border-left: 1px solid;
     border-color: rgba(255, 255, 255, 0.5); }
-  .button-group.round > *:first-child button, .button-group.round > *:first-child .button, .button-group.round > *:first-child header a.dropdown.secondary.idiomas, header .button-group.round > *:first-child a.dropdown.secondary.idiomas {
+  .button-group.round > *:first-child button, .button-group.round > *:first-child .button {
     border-left: 0; }
-  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > header a.dropdown.secondary.idiomas, header .button-group.round > *:first-child > a.dropdown.secondary.idiomas {
+  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button {
     border-bottom-left-radius: 1000px;
     border-top-left-radius: 1000px; }
-  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > header a.dropdown.secondary.idiomas, header .button-group.round > *:last-child > a.dropdown.secondary.idiomas {
+  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button {
     border-bottom-right-radius: 1000px;
     border-top-right-radius: 1000px; }
   .button-group.even-2 li {
     width: 50%; }
-    .button-group.even-2 li > button, .button-group.even-2 li .button, .button-group.even-2 li header a.dropdown.secondary.idiomas, header .button-group.even-2 li a.dropdown.secondary.idiomas {
+    .button-group.even-2 li > button, .button-group.even-2 li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group.even-2 li:first-child button, .button-group.even-2 li:first-child .button, .button-group.even-2 li:first-child header a.dropdown.secondary.idiomas, header .button-group.even-2 li:first-child a.dropdown.secondary.idiomas {
+    .button-group.even-2 li:first-child button, .button-group.even-2 li:first-child .button {
       border-left: 0; }
-    .button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li header a.dropdown.secondary.idiomas, header .button-group.even-2 li a.dropdown.secondary.idiomas {
+    .button-group.even-2 li button, .button-group.even-2 li .button {
       width: 100%; }
   .button-group.even-3 li {
     width: 33.33333%; }
-    .button-group.even-3 li > button, .button-group.even-3 li .button, .button-group.even-3 li header a.dropdown.secondary.idiomas, header .button-group.even-3 li a.dropdown.secondary.idiomas {
+    .button-group.even-3 li > button, .button-group.even-3 li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group.even-3 li:first-child button, .button-group.even-3 li:first-child .button, .button-group.even-3 li:first-child header a.dropdown.secondary.idiomas, header .button-group.even-3 li:first-child a.dropdown.secondary.idiomas {
+    .button-group.even-3 li:first-child button, .button-group.even-3 li:first-child .button {
       border-left: 0; }
-    .button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li header a.dropdown.secondary.idiomas, header .button-group.even-3 li a.dropdown.secondary.idiomas {
+    .button-group.even-3 li button, .button-group.even-3 li .button {
       width: 100%; }
   .button-group.even-4 li {
     width: 25%; }
-    .button-group.even-4 li > button, .button-group.even-4 li .button, .button-group.even-4 li header a.dropdown.secondary.idiomas, header .button-group.even-4 li a.dropdown.secondary.idiomas {
+    .button-group.even-4 li > button, .button-group.even-4 li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group.even-4 li:first-child button, .button-group.even-4 li:first-child .button, .button-group.even-4 li:first-child header a.dropdown.secondary.idiomas, header .button-group.even-4 li:first-child a.dropdown.secondary.idiomas {
+    .button-group.even-4 li:first-child button, .button-group.even-4 li:first-child .button {
       border-left: 0; }
-    .button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li header a.dropdown.secondary.idiomas, header .button-group.even-4 li a.dropdown.secondary.idiomas {
+    .button-group.even-4 li button, .button-group.even-4 li .button {
       width: 100%; }
   .button-group.even-5 li {
     width: 20%; }
-    .button-group.even-5 li > button, .button-group.even-5 li .button, .button-group.even-5 li header a.dropdown.secondary.idiomas, header .button-group.even-5 li a.dropdown.secondary.idiomas {
+    .button-group.even-5 li > button, .button-group.even-5 li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group.even-5 li:first-child button, .button-group.even-5 li:first-child .button, .button-group.even-5 li:first-child header a.dropdown.secondary.idiomas, header .button-group.even-5 li:first-child a.dropdown.secondary.idiomas {
+    .button-group.even-5 li:first-child button, .button-group.even-5 li:first-child .button {
       border-left: 0; }
-    .button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li header a.dropdown.secondary.idiomas, header .button-group.even-5 li a.dropdown.secondary.idiomas {
+    .button-group.even-5 li button, .button-group.even-5 li .button {
       width: 100%; }
   .button-group.even-6 li {
     width: 16.66667%; }
-    .button-group.even-6 li > button, .button-group.even-6 li .button, .button-group.even-6 li header a.dropdown.secondary.idiomas, header .button-group.even-6 li a.dropdown.secondary.idiomas {
+    .button-group.even-6 li > button, .button-group.even-6 li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group.even-6 li:first-child button, .button-group.even-6 li:first-child .button, .button-group.even-6 li:first-child header a.dropdown.secondary.idiomas, header .button-group.even-6 li:first-child a.dropdown.secondary.idiomas {
+    .button-group.even-6 li:first-child button, .button-group.even-6 li:first-child .button {
       border-left: 0; }
-    .button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li header a.dropdown.secondary.idiomas, header .button-group.even-6 li a.dropdown.secondary.idiomas {
+    .button-group.even-6 li button, .button-group.even-6 li .button {
       width: 100%; }
   .button-group.even-7 li {
     width: 14.28571%; }
-    .button-group.even-7 li > button, .button-group.even-7 li .button, .button-group.even-7 li header a.dropdown.secondary.idiomas, header .button-group.even-7 li a.dropdown.secondary.idiomas {
+    .button-group.even-7 li > button, .button-group.even-7 li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group.even-7 li:first-child button, .button-group.even-7 li:first-child .button, .button-group.even-7 li:first-child header a.dropdown.secondary.idiomas, header .button-group.even-7 li:first-child a.dropdown.secondary.idiomas {
+    .button-group.even-7 li:first-child button, .button-group.even-7 li:first-child .button {
       border-left: 0; }
-    .button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li header a.dropdown.secondary.idiomas, header .button-group.even-7 li a.dropdown.secondary.idiomas {
+    .button-group.even-7 li button, .button-group.even-7 li .button {
       width: 100%; }
   .button-group.even-8 li {
     width: 12.5%; }
-    .button-group.even-8 li > button, .button-group.even-8 li .button, .button-group.even-8 li header a.dropdown.secondary.idiomas, header .button-group.even-8 li a.dropdown.secondary.idiomas {
+    .button-group.even-8 li > button, .button-group.even-8 li .button {
       border-left: 1px solid;
       border-color: rgba(255, 255, 255, 0.5); }
-    .button-group.even-8 li:first-child button, .button-group.even-8 li:first-child .button, .button-group.even-8 li:first-child header a.dropdown.secondary.idiomas, header .button-group.even-8 li:first-child a.dropdown.secondary.idiomas {
+    .button-group.even-8 li:first-child button, .button-group.even-8 li:first-child .button {
       border-left: 0; }
-    .button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li header a.dropdown.secondary.idiomas, header .button-group.even-8 li a.dropdown.secondary.idiomas {
+    .button-group.even-8 li button, .button-group.even-8 li .button {
       width: 100%; }
 
 .button-bar {
@@ -2212,10 +2212,10 @@ button, .button, header a.dropdown.secondary.idiomas {
   .f-dropdown.large {
     max-width: 800px; }
 
-.dropdown.button, header a.dropdown.secondary.idiomas, button.dropdown {
+.dropdown.button, button.dropdown {
   position: relative;
   padding-right: 3.5625rem; }
-  .dropdown.button:before, header a.dropdown.secondary.idiomas:before, button.dropdown:before {
+  .dropdown.button:before, button.dropdown:before {
     position: absolute;
     content: "";
     width: 0;
@@ -2224,37 +2224,37 @@ button, .button, header a.dropdown.secondary.idiomas {
     border-style: solid;
     border-color: #fff transparent transparent transparent;
     top: 50%; }
-  .dropdown.button:before, header a.dropdown.secondary.idiomas:before, button.dropdown:before {
+  .dropdown.button:before, button.dropdown:before {
     border-width: 0.375rem;
     right: 1.40625rem;
     margin-top: -0.15625rem; }
-  .dropdown.button:before, header a.dropdown.secondary.idiomas:before, button.dropdown:before {
+  .dropdown.button:before, button.dropdown:before {
     border-color: #fff transparent transparent transparent; }
-  .dropdown.button.tiny, header a.dropdown.tiny.secondary.idiomas, button.dropdown.tiny {
+  .dropdown.button.tiny, button.dropdown.tiny {
     padding-right: 2.625rem; }
-    .dropdown.button.tiny:before, header a.dropdown.tiny.secondary.idiomas:before, button.dropdown.tiny:before {
+    .dropdown.button.tiny:before, button.dropdown.tiny:before {
       border-width: 0.375rem;
       right: 1.125rem;
       margin-top: -0.125rem; }
-    .dropdown.button.tiny:before, header a.dropdown.tiny.secondary.idiomas:before, button.dropdown.tiny:before {
+    .dropdown.button.tiny:before, button.dropdown.tiny:before {
       border-color: #fff transparent transparent transparent; }
-  .dropdown.button.small, header a.dropdown.small.secondary.idiomas, button.dropdown.small {
+  .dropdown.button.small, button.dropdown.small {
     padding-right: 3.0625rem; }
-    .dropdown.button.small:before, header a.dropdown.small.secondary.idiomas:before, button.dropdown.small:before {
+    .dropdown.button.small:before, button.dropdown.small:before {
       border-width: 0.4375rem;
       right: 1.3125rem;
       margin-top: -0.15625rem; }
-    .dropdown.button.small:before, header a.dropdown.small.secondary.idiomas:before, button.dropdown.small:before {
+    .dropdown.button.small:before, button.dropdown.small:before {
       border-color: #fff transparent transparent transparent; }
-  .dropdown.button.large, header a.dropdown.large.secondary.idiomas, button.dropdown.large {
+  .dropdown.button.large, button.dropdown.large {
     padding-right: 3.625rem; }
-    .dropdown.button.large:before, header a.dropdown.large.secondary.idiomas:before, button.dropdown.large:before {
+    .dropdown.button.large:before, button.dropdown.large:before {
       border-width: 0.3125rem;
       right: 1.71875rem;
       margin-top: -0.15625rem; }
-    .dropdown.button.large:before, header a.dropdown.large.secondary.idiomas:before, button.dropdown.large:before {
+    .dropdown.button.large:before, button.dropdown.large:before {
       border-color: #fff transparent transparent transparent; }
-  .dropdown.button.secondary:before, header a.dropdown.secondary.idiomas:before, button.dropdown.secondary:before {
+  .dropdown.button.secondary:before, button.dropdown.secondary:before {
     border-color: #333 transparent transparent transparent; }
 
 .flex-video {
@@ -2280,18 +2280,18 @@ form {
   margin: 0 0 1rem; }
 
 /* Using forms within rows, we need to set some defaults */
-form .row .row, form .row header, form .row body > footer, body > form .row footer, form .row header, form .row body > footer, body > form .row footer {
+form .row .row {
   margin: 0 -0.5rem; }
-  form .row .row .column, form .row .row header, form .row .row body > footer, body > form .row .row footer, form .row .row header, form .row .row body > footer, body > form .row .row footer, form .row .row .columns, form .row .row header, form .row .row body > footer, body > form .row .row footer, form .row .row header, form .row .row body > footer, body > form .row .row footer {
+  form .row .row .column, form .row .row .columns {
     padding: 0 0.5rem; }
-  form .row .row.collapse, form .row header, form .row body > footer, body > form .row footer, form .row header.collapse, form .row body > footer.collapse, body > form .row footer.collapse {
+  form .row .row.collapse {
     margin: 0; }
-    form .row .row.collapse .column, form .row .row.collapse header, form .row .row.collapse body > footer, body > form .row .row.collapse footer, form .row .row.collapse header.collapse, form .row .row.collapse body > footer.collapse, body > form .row .row.collapse footer.collapse, form .row .row.collapse .columns, form .row .row.collapse header, form .row .row.collapse body > footer, body > form .row .row.collapse footer, form .row .row.collapse header.collapse, form .row .row.collapse body > footer.collapse, body > form .row .row.collapse footer.collapse {
+    form .row .row.collapse .column, form .row .row.collapse .columns {
       padding: 0; }
-    form .row .row.collapse input, form .row .row.collapse header, form .row .row.collapse body > footer, body > form .row .row.collapse footer, form .row .row.collapse header.collapse, form .row .row.collapse body > footer.collapse, body > form .row .row.collapse footer.collapse {
+    form .row .row.collapse input {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
-form .row input.column, form .row header, form .row body > footer, body > form .row footer, form .row input.columns, form .row header, form .row body > footer, body > form .row footer, form .row textarea.column, form .row header, form .row body > footer, body > form .row footer, form .row textarea.columns, form .row header, form .row body > footer, body > form .row footer {
+form .row input.column, form .row input.columns, form .row textarea.column, form .row textarea.columns {
   padding-left: 0.5rem; }
 
 /* Label Styles */
@@ -2341,7 +2341,7 @@ select::-ms-expand {
   line-height: 2.3125rem; }
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
-.postfix.button, header a.postfix.dropdown.secondary.idiomas {
+.postfix.button {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2350,7 +2350,7 @@ select::-ms-expand {
   line-height: 2.125rem;
   border: none; }
 
-.prefix.button, header a.prefix.dropdown.secondary.idiomas {
+.prefix.button {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2359,22 +2359,22 @@ select::-ms-expand {
   line-height: 2.125rem;
   border: none; }
 
-.prefix.button.radius, header a.prefix.radius.dropdown.secondary.idiomas {
+.prefix.button.radius {
   border-radius: 0;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px; }
 
-.postfix.button.radius, header a.postfix.radius.dropdown.secondary.idiomas {
+.postfix.button.radius {
   border-radius: 0;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px; }
 
-.prefix.button.round, header a.prefix.round.dropdown.secondary.idiomas {
+.prefix.button.round {
   border-radius: 0;
   border-bottom-left-radius: 1000px;
   border-top-left-radius: 1000px; }
 
-.postfix.button.round, header a.postfix.round.dropdown.secondary.idiomas {
+.postfix.button.round {
   border-radius: 0;
   border-bottom-right-radius: 1000px;
   border-top-right-radius: 1000px; }
@@ -2581,7 +2581,7 @@ label.error {
 .joyride-content-wrapper {
   width: 100%;
   padding: 1.125rem 1.25rem 1.5rem; }
-  .joyride-content-wrapper .button, .joyride-content-wrapper header a.dropdown.secondary.idiomas, header .joyride-content-wrapper a.dropdown.secondary.idiomas {
+  .joyride-content-wrapper .button {
     margin-bottom: 0 !important; }
 
 /* Add a little css triangle pip, older browser just miss out on the fanciness of it */
@@ -3398,17 +3398,17 @@ dialog[open] {
       list-style: none;
       border-top-color: white; }
 
-.split.button, header a.split.dropdown.secondary.idiomas {
+.split.button {
   position: relative;
   padding-right: 5.0625rem; }
-  .split.button span, .split.button header a.split.dropdown.secondary.idiomas, header .split.button a.split.dropdown.secondary.idiomas {
+  .split.button span {
     display: block;
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
     border-left: solid 1px; }
-    .split.button span:before, .split.button header a.split.dropdown.secondary.idiomas, header .split.button a.split.dropdown.secondary.idiomas {
+    .split.button span:before {
       position: absolute;
       content: "";
       width: 0;
@@ -3417,62 +3417,62 @@ dialog[open] {
       border-style: inset;
       top: 50%;
       left: 50%; }
-    .split.button span:active, .split.button header a.split.dropdown.secondary.idiomas, header .split.button a.split.dropdown.secondary.idiomas {
+    .split.button span:active {
       background-color: rgba(0, 0, 0, 0.1); }
-  .split.button span, .split.button header a.split.dropdown.secondary.idiomas, header .split.button a.split.dropdown.secondary.idiomas {
+  .split.button span {
     border-left-color: rgba(255, 255, 255, 0.5); }
-  .split.button span, .split.button header a.split.dropdown.secondary.idiomas, header .split.button a.split.dropdown.secondary.idiomas {
+  .split.button span {
     width: 3.09375rem; }
-    .split.button span:before, .split.button header a.split.dropdown.secondary.idiomas, header .split.button a.split.dropdown.secondary.idiomas {
+    .split.button span:before {
       border-top-style: solid;
       border-width: 0.375rem;
       top: 48%;
       margin-left: -0.375rem; }
-  .split.button span:before, .split.button header a.split.dropdown.secondary.idiomas, header .split.button a.split.dropdown.secondary.idiomas {
+  .split.button span:before {
     border-color: #fff transparent transparent transparent; }
-  .split.button.secondary span, .split.button.secondary header a.split.secondary.dropdown.idiomas, header .split.button.secondary a.split.secondary.dropdown.idiomas {
+  .split.button.secondary span {
     border-left-color: rgba(255, 255, 255, 0.5); }
-  .split.button.secondary span:before, .split.button.secondary header a.split.secondary.dropdown.idiomas, header .split.button.secondary a.split.secondary.dropdown.idiomas {
+  .split.button.secondary span:before {
     border-color: #fff transparent transparent transparent; }
-  .split.button.alert span, .split.button.alert header a.split.alert.dropdown.secondary.idiomas, header .split.button.alert a.split.alert.dropdown.secondary.idiomas {
+  .split.button.alert span {
     border-left-color: rgba(255, 255, 255, 0.5); }
-  .split.button.success span, .split.button.success header a.split.success.dropdown.secondary.idiomas, header .split.button.success a.split.success.dropdown.secondary.idiomas {
+  .split.button.success span {
     border-left-color: rgba(255, 255, 255, 0.5); }
-  .split.button.tiny, header a.split.tiny.dropdown.secondary.idiomas {
+  .split.button.tiny {
     padding-right: 3.75rem; }
-    .split.button.tiny span, .split.button.tiny header a.split.tiny.dropdown.secondary.idiomas, header .split.button.tiny a.split.tiny.dropdown.secondary.idiomas {
+    .split.button.tiny span {
       width: 2.25rem; }
-      .split.button.tiny span:before, .split.button.tiny header a.split.tiny.dropdown.secondary.idiomas, header .split.button.tiny a.split.tiny.dropdown.secondary.idiomas {
+      .split.button.tiny span:before {
         border-top-style: solid;
         border-width: 0.375rem;
         top: 48%;
         margin-left: -0.375rem; }
-  .split.button.small, header a.split.small.dropdown.secondary.idiomas {
+  .split.button.small {
     padding-right: 4.375rem; }
-    .split.button.small span, .split.button.small header a.split.small.dropdown.secondary.idiomas, header .split.button.small a.split.small.dropdown.secondary.idiomas {
+    .split.button.small span {
       width: 2.625rem; }
-      .split.button.small span:before, .split.button.small header a.split.small.dropdown.secondary.idiomas, header .split.button.small a.split.small.dropdown.secondary.idiomas {
+      .split.button.small span:before {
         border-top-style: solid;
         border-width: 0.4375rem;
         top: 48%;
         margin-left: -0.375rem; }
-  .split.button.large, header a.split.large.dropdown.secondary.idiomas {
+  .split.button.large {
     padding-right: 5.5rem; }
-    .split.button.large span, .split.button.large header a.split.large.dropdown.secondary.idiomas, header .split.button.large a.split.large.dropdown.secondary.idiomas {
+    .split.button.large span {
       width: 3.4375rem; }
-      .split.button.large span:before, .split.button.large header a.split.large.dropdown.secondary.idiomas, header .split.button.large a.split.large.dropdown.secondary.idiomas {
+      .split.button.large span:before {
         border-top-style: solid;
         border-width: 0.3125rem;
         top: 48%;
         margin-left: -0.375rem; }
-  .split.button.expand, header a.split.expand.dropdown.secondary.idiomas {
+  .split.button.expand {
     padding-left: 2rem; }
-  .split.button.secondary span:before, .split.button.secondary header a.split.secondary.dropdown.idiomas, header .split.button.secondary a.split.secondary.dropdown.idiomas {
+  .split.button.secondary span:before {
     border-color: #333 transparent transparent transparent; }
-  .split.button.radius span, .split.button.radius header a.split.radius.dropdown.secondary.idiomas, header .split.button.radius a.split.radius.dropdown.secondary.idiomas {
+  .split.button.radius span {
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px; }
-  .split.button.round span, .split.button.round header a.split.round.dropdown.secondary.idiomas, header .split.button.round a.split.round.dropdown.secondary.idiomas {
+  .split.button.round span {
     border-bottom-right-radius: 1000px;
     border-top-right-radius: 1000px; }
 
@@ -3834,7 +3834,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+  background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 #376850; }
   .contain-to-grid .top-bar {
     margin-bottom: 1rem; }
 
@@ -3862,12 +3862,12 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 #376850;
   margin-bottom: 1rem; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
-  .top-bar .row, .top-bar header, .top-bar body > footer, body > .top-bar footer {
+  .top-bar .row {
     max-width: none; }
   .top-bar form, .top-bar input {
     margin-bottom: 0; }
@@ -3876,7 +3876,7 @@ meta.foundation-mq-topbar {
     padding-top: 0.35rem;
     padding-bottom: 0.35rem;
     font-size: 0.75rem; }
-  .top-bar .button, .top-bar header a.dropdown.secondary.idiomas, header .top-bar a.dropdown.secondary.idiomas, .top-bar button {
+  .top-bar .button, .top-bar button {
     padding-top: 0.45rem;
     padding-bottom: 0.35rem;
     margin-bottom: 0;
@@ -3897,7 +3897,7 @@ meta.foundation-mq-topbar {
         color: #fff;
         width: 75%;
         display: block;
-        padding: 0 9px; }
+        padding: 0 8px; }
   .top-bar .toggle-topbar {
     position: absolute;
     right: 0;
@@ -3909,11 +3909,11 @@ meta.foundation-mq-topbar {
       font-weight: bold;
       position: relative;
       display: block;
-      padding: 0 9px;
+      padding: 0 8px;
       height: 45px;
       line-height: 45px; }
     .top-bar .toggle-topbar.menu-icon {
-      right: 9px;
+      right: 8px;
       top: 50%;
       margin-top: -16px;
       padding-left: 40px; }
@@ -3937,7 +3937,7 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 #376850; }
     .top-bar.expanded .toggle-topbar a {
       color: #d9d9d9; }
       .top-bar.expanded .toggle-topbar a::after {
@@ -3965,51 +3965,51 @@ meta.foundation-mq-topbar {
     width: 100%;
     color: #fff;
     padding: 12px 0 12px 0;
-    padding-left: 9px;
+    padding-left: 8px;
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
     font-weight: bold;
     text-transform: none;
     background: #cedcd2; }
-    .top-bar-section ul li > a.button, .top-bar-section ul li > header a.dropdown.secondary.idiomas, header .top-bar-section ul li > a.dropdown.secondary.idiomas {
+    .top-bar-section ul li > a.button {
       font-size: 0.8125rem;
-      padding-right: 9px;
-      padding-left: 9px;
+      padding-right: 8px;
+      padding-left: 8px;
       background-color: #376850;
       border-color: #2c5340;
       color: #fff; }
-      .top-bar-section ul li > a.button:hover, .top-bar-section ul li > header a.dropdown.secondary.idiomas:hover, header .top-bar-section ul li > a.dropdown.secondary.idiomas:hover, .top-bar-section ul li > a.button:focus, .top-bar-section ul li > header a.dropdown.secondary.idiomas:focus, header .top-bar-section ul li > a.dropdown.secondary.idiomas:focus {
+      .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
         background-color: #2c5340; }
-      .top-bar-section ul li > a.button:hover, .top-bar-section ul li > header a.dropdown.secondary.idiomas:hover, header .top-bar-section ul li > a.dropdown.secondary.idiomas:hover, .top-bar-section ul li > a.button:focus, .top-bar-section ul li > header a.dropdown.secondary.idiomas:focus, header .top-bar-section ul li > a.dropdown.secondary.idiomas:focus {
+      .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
         color: #fff; }
-    .top-bar-section ul li > a.button.secondary, .top-bar-section ul li > header a.secondary.dropdown.idiomas, header .top-bar-section ul li > a.secondary.dropdown.idiomas {
+    .top-bar-section ul li > a.button.secondary {
       background-color: #cedcd2;
       border-color: #9cb9a4;
       color: #333; }
-      .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > header a.secondary.dropdown.idiomas:hover, header .top-bar-section ul li > a.secondary.dropdown.idiomas:hover, .top-bar-section ul li > a.button.secondary:focus, .top-bar-section ul li > header a.secondary.dropdown.idiomas:focus, header .top-bar-section ul li > a.secondary.dropdown.idiomas:focus {
+      .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
         background-color: #9cb9a4; }
-      .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > header a.secondary.dropdown.idiomas:hover, header .top-bar-section ul li > a.secondary.dropdown.idiomas:hover, .top-bar-section ul li > a.button.secondary:focus, .top-bar-section ul li > header a.secondary.dropdown.idiomas:focus, header .top-bar-section ul li > a.secondary.dropdown.idiomas:focus {
+      .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
         color: #333; }
-    .top-bar-section ul li > a.button.success, .top-bar-section ul li > header a.success.dropdown.secondary.idiomas, header .top-bar-section ul li > a.success.dropdown.secondary.idiomas {
+    .top-bar-section ul li > a.button.success {
       background-color: #43AC6A;
       border-color: #368a54;
       color: #fff; }
-      .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > header a.success.dropdown.secondary.idiomas:hover, header .top-bar-section ul li > a.success.dropdown.secondary.idiomas:hover, .top-bar-section ul li > a.button.success:focus, .top-bar-section ul li > header a.success.dropdown.secondary.idiomas:focus, header .top-bar-section ul li > a.success.dropdown.secondary.idiomas:focus {
+      .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
         background-color: #368a54; }
-      .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > header a.success.dropdown.secondary.idiomas:hover, header .top-bar-section ul li > a.success.dropdown.secondary.idiomas:hover, .top-bar-section ul li > a.button.success:focus, .top-bar-section ul li > header a.success.dropdown.secondary.idiomas:focus, header .top-bar-section ul li > a.success.dropdown.secondary.idiomas:focus {
+      .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
         color: #fff; }
-    .top-bar-section ul li > a.button.alert, .top-bar-section ul li > header a.alert.dropdown.secondary.idiomas, header .top-bar-section ul li > a.alert.dropdown.secondary.idiomas {
+    .top-bar-section ul li > a.button.alert {
       background-color: #f04124;
       border-color: #cf280e;
       color: #fff; }
-      .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > header a.alert.dropdown.secondary.idiomas:hover, header .top-bar-section ul li > a.alert.dropdown.secondary.idiomas:hover, .top-bar-section ul li > a.button.alert:focus, .top-bar-section ul li > header a.alert.dropdown.secondary.idiomas:focus, header .top-bar-section ul li > a.alert.dropdown.secondary.idiomas:focus {
+      .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
         background-color: #cf280e; }
-      .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > header a.alert.dropdown.secondary.idiomas:hover, header .top-bar-section ul li > a.alert.dropdown.secondary.idiomas:hover, .top-bar-section ul li > a.button.alert:focus, .top-bar-section ul li > header a.alert.dropdown.secondary.idiomas:focus, header .top-bar-section ul li > a.alert.dropdown.secondary.idiomas:focus {
+      .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
         color: #fff; }
   .top-bar-section ul li > button {
     font-size: 0.8125rem;
-    padding-right: 9px;
-    padding-left: 9px;
+    padding-right: 8px;
+    padding-left: 8px;
     background-color: #376850;
     border-color: #2c5340;
     color: #fff; }
@@ -4043,7 +4043,7 @@ meta.foundation-mq-topbar {
         color: #fff; }
   .top-bar-section ul li:hover:not(.has-form) > a {
     background: #cedcd2;
-    color: black; }
+    color: #333333; }
   .top-bar-section ul li.active > a {
     background: #376850;
     color: #fff; }
@@ -4051,7 +4051,7 @@ meta.foundation-mq-topbar {
       background: #2f5944;
       color: #fff; }
   .top-bar-section .has-form {
-    padding: 9px; }
+    padding: 8px; }
   .top-bar-section .has-dropdown {
     position: relative; }
     .top-bar-section .has-dropdown > a:after {
@@ -4062,7 +4062,7 @@ meta.foundation-mq-topbar {
       border: inset 5px;
       border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
       border-left-style: solid;
-      margin-right: 9px;
+      margin-right: 8px;
       margin-top: -4.5px;
       position: absolute;
       top: 50%;
@@ -4096,7 +4096,7 @@ meta.foundation-mq-topbar {
       height: auto; }
       .top-bar-section .dropdown li a {
         font-weight: normal;
-        padding: 8px 9px; }
+        padding: 8px 8px; }
         .top-bar-section .dropdown li a.parent-link {
           font-weight: bold; }
       .top-bar-section .dropdown li.title h5 {
@@ -4106,11 +4106,11 @@ meta.foundation-mq-topbar {
           line-height: 22.5px;
           display: block; }
       .top-bar-section .dropdown li.has-form {
-        padding: 8px 9px; }
-      .top-bar-section .dropdown li .button, .top-bar-section .dropdown li header a.dropdown.secondary.idiomas, header .top-bar-section .dropdown li a.dropdown.secondary.idiomas, .top-bar-section .dropdown li button {
+        padding: 8px 8px; }
+      .top-bar-section .dropdown li .button, .top-bar-section .dropdown li button {
         top: auto; }
     .top-bar-section .dropdown label {
-      padding: 8px 9px 2px;
+      padding: 8px 8px 2px;
       margin-bottom: 0;
       text-transform: uppercase;
       color: #777;
@@ -4122,7 +4122,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width:40.063em) {
   .top-bar {
-    background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 #376850;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -4136,12 +4136,12 @@ meta.foundation-mq-topbar {
       float: left; }
     .top-bar .name h1 a {
       width: auto; }
-    .top-bar input, .top-bar .button, .top-bar header a.dropdown.secondary.idiomas, header .top-bar a.dropdown.secondary.idiomas, .top-bar button {
+    .top-bar input, .top-bar .button, .top-bar button {
       font-size: 0.875rem;
       position: relative;
       top: 7px; }
     .top-bar.expanded {
-      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 #376850; }
   .contain-to-grid .top-bar {
     max-width: 100%;
     margin: 0 auto;
@@ -4159,22 +4159,22 @@ meta.foundation-mq-topbar {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
       background: #cedcd2;
-      color: black; }
+      color: #333333; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      padding: 0 9px;
+      padding: 0 8px;
       line-height: 45px;
-      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 #376850; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background: #cedcd2; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-      padding: 0 9px;
+      padding: 0 8px;
       line-height: 45px;
       color: #fff;
       background: #376850; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #2f5944; }
     .top-bar-section .has-dropdown > a {
-      padding-right: 29px !important; }
+      padding-right: 28px !important; }
       .top-bar-section .has-dropdown > a:after {
         content: "";
         display: block;
@@ -4215,16 +4215,16 @@ meta.foundation-mq-topbar {
       background: transparent;
       min-width: 100%; }
       .top-bar-section .dropdown li a {
-        color: black;
+        color: #333333;
         line-height: 1;
         white-space: nowrap;
-        padding: 12px 9px;
+        padding: 12px 8px;
         background: #cedcd2; }
       .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
-        color: black;
+        color: #333333;
         background: #cedcd2; }
       .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
-        color: black;
+        color: #333333;
         background: #cedcd2; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
@@ -4240,7 +4240,7 @@ meta.foundation-mq-topbar {
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+      background: linear-gradient(to bottom, #376850 0%, #376850 88%, #7cbf8d 96%, #376850 100%) repeat scroll 0 0 #376850;
       padding: 0 15px;
       height: 45px; }
     .top-bar-section .right li .dropdown {
@@ -4255,7 +4255,7 @@ meta.foundation-mq-topbar {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
     background: #cedcd2;
-    color: black; }
+    color: #333333; }
   .no-js .top-bar-section ul li:active > a {
     background: #376850;
     color: #fff; }
@@ -4529,7 +4529,7 @@ dl dd {
 abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: black;
+  color: #333333;
   border-bottom: 1px dotted #ddd;
   cursor: help; }
 
@@ -5056,114 +5056,6 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/* Personalizar */
-body {
-  overflow-y: scroll; }
-
-.skip {
-  height: 1px;
-  left: -10000px;
-  overflow: hidden;
-  position: absolute;
-  top: auto;
-  width: 1px; }
-
-.banners {
-  margin: 0;
-  padding: 0; }
-  .banners ul {
-    text-align: center;
-    margin: 0; }
-  .banners img {
-    border: 1px solid white;
-    margin: 15px 0;
-    box-shadow: 0px 0px 3px 2px rgba(50, 50, 50, 0.2); }
-
-header {
-  background-color: #f8f7ed; }
-  header a.dropdown.secondary.idiomas {
-    right: 2.875rem;
-    top: 0.625rem;
-    z-index: 100;
-    font-size: 0.85rem;
-    background-color: transparent;
-    position: absolute; }
-    header a.dropdown.secondary.idiomas:before {
-      right: 2.2rem; }
-    header a.dropdown.secondary.idiomas:hover, header a.dropdown.secondary.idiomas:active, header a.dropdown.secondary.idiomas:visited, header a.dropdown.secondary.idiomas:link {
-      background-color: transparent; }
-  header .columns {
-    margin-top: 0.9375rem;
-    margin-bottom: 0.9375rem; }
-    header .columns img {
-      float: left;
-      margin-right: 0.625rem;
-      max-width: 400px; }
-
-header h1 {
-  color: #376850;
-  float: left; }
-  header h1 span {
-    font-size: 80%;
-    line-height: 3.5rem; }
-    header h1 span small {
-      display: block;
-      color: #376850;
-      margin-left: 2px;
-      margin-top: 4px;
-      font-size: 55%; }
-
-#menu {
-  padding-left: 0;
-  padding-right: 0; }
-  #menu strong {
-    font-size: 110%; }
-  #menu i.fa {
-    font-size: 1.4rem; }
-
-.top-bar-section ul:hover .has-dropdown > a:after {
-  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent; }
-
-aside .accordion .row, aside .accordion header, aside .accordion body > footer, body > aside .accordion footer {
-  padding: 0;
-  margin: 0; }
-aside .accordion .content.active {
-  background-color: #fcfefd; }
-aside .accordion dd > a, aside .accordion dd.active > a, aside .accordion dd > a:hover {
-  background-color: #cedcd2;
-  border-bottom: 1px solid #fcfefd;
-  color: #0b1510; }
-aside .accordion ul {
-  list-style-type: none; }
-
-ul.slider {
-  margin-left: 0; }
-  ul.slider figure {
-    margin: 0;
-    position: relative; }
-  ul.slider figcaption {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0; }
-
-body > footer {
-  background-color: #efefef; }
-
-.wrap {
-  min-height: 100%;
-  margin-bottom: -100px; }
-
-.wrap:after {
-  content: '';
-  display: block; }
-
-body > footer, .wrap:after {
-  height: 100px; }
-
 /* Slider */
 .slick-slider {
   position: relative;
@@ -5189,7 +5081,7 @@ body > footer, .wrap:after {
   .slick-list:focus {
     outline: none; }
   .slick-loading .slick-list {
-    background: white url("img/ajax-loader.gif") center center no-repeat; }
+    background: white url("../img/ajax-loader.gif") center center no-repeat; }
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
@@ -5282,7 +5174,6 @@ body > footer, .wrap:after {
   .slick-next:before {
     content: "\2192"; }
 
-/* Dots */
 .slick-slider {
   margin-bottom: 30px; }
 
@@ -5335,13 +5226,83 @@ body > footer, .wrap:after {
     .slick-dots li.slick-active button:before {
       opacity: 0.75; }
 
+.icon_circulo-large {
+  width: 51px;
+  height: 51px;
+  background-position: 0 0; }
+
+.icon_cuadrado-large {
+  width: 51px;
+  height: 51px;
+  background-position: -54px 0; }
+
+.icon_cuadrado2-large {
+  width: 51px;
+  height: 51px;
+  background-position: -108px 0; }
+
+.icon_estrella-large {
+  width: 51px;
+  height: 51px;
+  background-position: -162px 0; }
+
+.icon_hexagono-large {
+  width: 51px;
+  height: 51px;
+  background-position: -216px 0; }
+
+.icon_circulo-large, .icon_cuadrado-large, .icon_cuadrado2-large, .icon_estrella-large, .icon_hexagono-large {
+  background-image: url("../img/icons/icons-sprite-large.png");
+  background-size: 270px 54px; }
+
+.icon_circulo-small {
+  width: 34px;
+  height: 34px;
+  background-position: 0 0; }
+
+.icon_cuadrado-small {
+  width: 34px;
+  height: 34px;
+  background-position: -36px 0; }
+
+.icon_cuadrado2-small {
+  width: 34px;
+  height: 34px;
+  background-position: -72px 0; }
+
+.icon_estrella-small {
+  width: 34px;
+  height: 34px;
+  background-position: -108px 0; }
+
+.icon_hexagono-small {
+  width: 34px;
+  height: 34px;
+  background-position: -144px 0; }
+
+.icon_circulo-small, .icon_cuadrado-small, .icon_cuadrado2-small, .icon_estrella-small, .icon_hexagono-small {
+  background-image: url("../img/icons/icons-sprite-small.png");
+  background-size: 180px 36px; }
+
+.svg .icon_circulo-large, .svg .icon_cuadrado-large, .svg .icon_cuadrado2-large, .svg .icon_estrella-large, .svg .icon_hexagono-large, .svg .icon_circulo-small, .svg .icon_cuadrado-small, .svg .icon_cuadrado2-small, .svg .icon_estrella-small, .svg .icon_hexagono-small {
+  background-image: url("../img/icons/icons-sprite.svg"); }
+
 @media only screen and (max-width: 40em) {
   header div {
     text-align: center; }
     header div img {
       width: 100%; }
-  #menu .top-bar-section ul li > a {
-    color: black; }
+  .top-bar-section ul li:not(.has-form) > a:not(.button) {
+    color: #333333;
+    font-weight: normal; }
+    .top-bar-section ul li:not(.has-form) > a:not(.button):hover {
+      color: #376850; }
+  .top-bar-section .divider, .top-bar-section [role="separator"] {
+    border-top-color: #fcfefd; }
+  .top-bar-section ul .has-dropdown > a:after, .top-bar-section ul:hover .has-dropdown > a:after {
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.4); }
+  .top-bar-section .dropdown li.title h5 a {
+    font-weight: bold; }
   .slider {
     display: none; } }
 

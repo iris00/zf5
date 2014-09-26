@@ -37,7 +37,7 @@ $slick-dot-character: "\2022" !default;
     outline: none;
   }
   .slick-loading & {
-    background: white url("img/ajax-loader.gif") center center no-repeat;
+    background: white url("../img/ajax-loader.gif") center center no-repeat;
   }
   &.dragging {
     cursor: pointer;
@@ -163,8 +163,7 @@ $slick-dot-character: "\2022" !default;
   }
 }
 
-/* Dots */
-
+// Dots
 .slick-slider {
   margin-bottom: 30px;
 }

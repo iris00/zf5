@@ -1,6 +1,6 @@
 <!doctype html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
+<!--[if IE 9]><html class="lt-ie10" lang="es-ES" > <![endif]-->
+<html class="no-js" lang="es-ES">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
           <li><a href="#">Bienvenue</a></li>
         </ul>
         <div class="large-12 columns">
-          <img src="images/logo2.svg" alt="Logo Imserso">
+          <img class="svg" src="images/logo.svg" alt="Logo Imserso">
           <h1 class="hide-for-small-only hide-for-medium-only">
           <span>Imserso<small>Instituto de Mayores y Servicios Sociales</small></span>
           </h1>
@@ -45,14 +45,36 @@
               <section class="top-bar-section">
                 <!-- Left Nav -->
                 <ul class="left">
-                  <li><a href="/imserso_01/index.htm"><i class="fa fa-home"><span class="skip">Inicio</span></i></a></li>
+                  <li><a href="index.html"><i class="fa fa-home"><span class="skip">Inicio</span></i></a></li>
                   <li class="divider"></li>
                   <li class="has-dropdown">
                     <a href="#"><strong>Secciones</strong></a>
                     <ul class="dropdown">
-                      <li><a href="#">First link in dropdown</a></li>
+                      <li class="has-dropdown"><a href="#">El Imserso</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Quiénes somos</a></li>
+                          <li><a href="#">Organigrama</a></li>
+                          <li><a href="#">Informes Anuales</a></li>
+                          <li><a href="#">Relaciones Institucionales y Participación Social</a></li>
+                          <li><a href="#">Relaciones Internacionales</a></li>
+                          <li><a href="#">Procedimientos Administrativos</a></li>
+                          <li><a href="#">Comisión para la Reforma de las Administraciones Públicas (<abbr title="Comisión para la Reforma de las Administraciones Públicas">CORA</abbr>) en el Imserso</a></li>
+                          <li><a href="#">Reconocimientos al Imserso</a></li>
+                          <li><a href="#">Imagen Institucional</a></li>
+                          <li><a href="#">Marca Imserso</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Actualidad</a></li>
+                      <li><a href="#">Autonomía Personal y Dependencia</a></li>
+                      <li><a href="#">Envejecimiento activo</a></li>
+                      <li><a href="#">Prestaciones y Subvenciones</a></li>
+                      <li><a href="#">Centros</a></li>
+                      <li><a href="#">Innovación y Apoyo Técnico</a></li>
+                      <li><a href="#">Documentación</a></li>
+                      <li><a href="#">Más Información</a></li>
                     </ul>
                   </li>
+                  <li class="divider"></li>
                 </ul>
                 <!-- Right Nav -->
                 <ul class="right">
@@ -61,6 +83,7 @@
                   <li><a href="/imserso_01/auxiliares/direcciones/index.htm">Direcciones</a></li>
                   <li class="divider"></li>
                   <li><a href="/imserso_01/mas_informacion/enlaces_interes/index.htm">Enlaces</a></li>
+                  <li class="divider"></li>
                   <li class="has-form">
                     <div class="row collapse">
                       <div class="small-8 columns">
@@ -79,7 +102,8 @@
       </div>
       <!-- Content -->
       <article class="row">
-      <section class="large-9 columns">
+      <section class="large-8 columns">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit laborum sequi voluptatem quod ullam ad atque odio voluptate quae. Voluptas distinctio ipsum magni in.</p>
         <ul class="slider">
           <li>
             <figure>
@@ -96,31 +120,34 @@
             </figure>
           </li>
           <li>
-            <figure><img src="images/slider/3.jpg" alt="slide 3" />
+            <figure>
+              <img src="images/slider/3.jpg" alt="slide 3" />
               <figcaption>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, molestiae, laudantium.
-            <figcaption></figure>
+              </figcaption>
+            </figure>
           </li>
           <li>
             <figure><img src="images/slider/4.jpg" alt="slide 4" />
               <div class="caption">
                 <figcaption> amet, consectetur adipisicing elit. Ullam, qui excepturi odio explicabo omnis atque nesciunt? Quos libero eveniet natus nisi sapiente minima aut id.
-              <figcaption></figure>
+              </figcaption></figure>
             </li>
             <li>
               <figure><img src="images/slider/5.jpg" alt="slide 5" />
                 <figcaption>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit!
-              <figcaption></figure>
+                </figcaption>
+              </figure>
             </li>
           </ul>
         </section>
-        <aside class="large-3 columns">
+        <aside class="large-4 columns">
           <dl data-accordion="" class="accordion">
             <dd class="active">
-            <a href="#destacado">Destacado</a>
+            <a href="#destacado"><i class="fa fa-exclamation fa-fw"></i> Destacado</a>
             <div class="content active row" id="destacado">
-              <div class="large-6 columns banners">
+              <div class="small-6 columns banners">
                 <ul class="">
                   <li><a href=""><img src="images/destac1.png" alt="destacado 1"></a></li>
                   <li><a href=""><img src="images/destac2.png" alt="destacado 2"></a></li>
@@ -128,7 +155,7 @@
                   <li><a href=""><img src="images/destac4.png" alt="destacado 4"></a></li>
                 </ul>
               </div>
-              <div class="large-6 columns banners">
+              <div class="small-6 columns banners">
                 <ul class="">
                   <li><a href=""><img src="images/destac4.png" alt="destacado 5"></a></li>
                   <li><a href=""><img src="images/destac3.png" alt="destacado 6"></a></li>
@@ -139,31 +166,31 @@
             </div>
             </dd>
             <dd>
-            <a href="#a-directos">Accesos Directos</a>
+            <a href="#a-directos"><i class="fa fa-hand-o-right fa-fw"></i> Accesos Directos</a>
             <div class="content" id="a-directos">
               Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd >
-            <a href="#social">Síguenos en...</a>
+            <a href="#social"><i class="fa fa-twitter fa-fw"></i> Síguenos en...</a>
             <div class="content" id="social">
               Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd>
-            <a href="#servicios">Servicios</a>
+            <a href="#servicios"><i class="fa fa-gears fa-fw"></i> Servicios</a>
             <div class="content" id="servicios">
               Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd>
-            <a href="#visitado">Lo más visitado</a>
+            <a href="#visitado"><i class="fa fa-plus fa-fw"></i> Lo más visitado</a>
             <div class="content" id="visitado">
               Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd>
-            <a href="#interes">Accesos de Interés</a>
+            <a href="#interes"><i class="fa fa-tag fa-fw"></i> Accesos de Interés</a>
             <div class="content" id="interes">
               Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>

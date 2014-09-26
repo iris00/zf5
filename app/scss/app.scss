@@ -1,5 +1,6 @@
 @import "normalize";
-@import "settings";
+
+//@import "settings";
 
 // Make sure the charset is set appropriately
 @charset "UTF-8";
@@ -43,7 +44,8 @@
 @import "foundation/components/offcanvas";
 @import "foundation/components/visibility";
 
-@import "appstyles";
+//@import "appstyles";
 @import "slick";
+@import "icons";
 
 @import "media-queries";

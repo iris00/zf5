@@ -2,15 +2,34 @@
 
 // PEQUEÑOS
 @media #{$small-only} {
+  // Header
   header div {
     text-align: center;
     img {
       width: 100%;
     }
   }
-  #menu .top-bar-section ul li > a {
-    color: black;
+  //Menú
+  .top-bar-section {
+    ul li:not(.has-form) > a:not(.button) {
+      color: $color-grey-20;
+      font-weight: normal;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .divider, & [role="separator"] {
+      border-top-color: $primary-light-color;
+    }
+    ul .has-dropdown > a:after,
+    ul:hover .has-dropdown > a:after {
+      border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
+    }
+    .dropdown li.title h5 a {
+      font-weight: bold;
+    }
   }
+  // Slider
   .slider {
     display: none;
   }

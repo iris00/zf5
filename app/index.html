@@ -1,12 +1,11 @@
 <!doctype html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
+<!--[if IE 9]><html class="lt-ie10" lang="es-ES" > <![endif]-->
+<html class="no-js" lang="es-ES" >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Imserso. Instituto de Mayores y Servicios Sociales</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
@@ -22,12 +21,10 @@
   </head>
   <body data-grid-framework="f4" data-grid-color="black" data-grid-opacity="0.3" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12">
     <div class="wrap">
-      <ul class="skip">
-        <li><a accesskey="s" href="#centro">Contenido de la página [s]</a></li>
-        <li><a accesskey="m" href="#con-izq">Menú de navegación [m]</a></li>
-      </ul>
+      <a class="skip" accesskey="s" href="#contenido">Contenido de la página [s]</a>
+      <a class="skip" accesskey="m" href="#menu">Menú de navegación [m]</a>
       <!-- Cabecera -->
-      <header>
+      <header role="banner" aria-label="Cabecera de la página">
         <a class="idiomas dropdown secondary right hide-for-small-only" href="#" data-dropdown="idiomas">Bienvenidos</a>
         <ul id="idiomas" class="f-dropdown" data-dropdown-content>
           <li><a href="#">Benvinguts</a></li>
@@ -36,7 +33,7 @@
           <li><a href="#">Bienvenue</a></li>
         </ul>
         <div class="large-12 columns">
-          <img src="images/logo2.svg" alt="Logo Imserso">
+          <img class="svg" src="images/logo.svg" alt="Logo Imserso">
           <h1 class="hide-for-small-only hide-for-medium-only">
           <span>Imserso<small>Instituto de Mayores y Servicios Sociales</small></span>
           </h1>
@@ -46,7 +43,7 @@
       <div class="row">
         <div class="large-12 columns" id="menu">
           <div class="sticky">
-            <nav class="top-bar" data-topbar data-options="is_hover: false">
+            <nav class="top-bar" data-topbar data-options="is_hover: false" role="navigation" aria-label="Menú de navegación">
               <ul class="title-area">
                 <li class="name"> </li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menú</span></a></li>
@@ -54,12 +51,25 @@
               <section class="top-bar-section">
                 <!-- Left Nav -->
                 <ul class="left">
-                  <li><a href="/imserso_01/index.htm"><i class="fa fa-home"><span class="skip">Inicio</span></i></a></li>
+                  <li><a href="index.html"><i class="fa fa-home"><span class="skip">Inicio</span></i></a></li>
                   <li class="divider"></li>
                   <li class="has-dropdown">
                     <a href="#"><strong>Secciones</strong></a>
                     <ul class="dropdown">
-                      <li><a href="#">El Imserso</a></li>
+                      <li class="has-dropdown"><a href="#">El Imserso</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Quiénes somos</a></li>
+                          <li><a href="#">Organigrama</a></li>
+                          <li><a href="#">Informes Anuales</a></li>
+                          <li><a href="#">Relaciones Institucionales y Participación Social</a></li>
+                          <li><a href="#">Relaciones Internacionales</a></li>
+                          <li><a href="#">Procedimientos Administrativos</a></li>
+                          <li><a href="#">Comisión para la Reforma de las Administraciones Públicas (<abbr title="Comisión para la Reforma de las Administraciones Públicas">CORA</abbr>) en el Imserso</a></li>
+                          <li><a href="#">Reconocimientos al Imserso</a></li>
+                          <li><a href="#">Imagen Institucional</a></li>
+                          <li><a href="#">Marca Imserso</a></li>
+                        </ul>
+                      </li>
                       <li><a href="#">Actualidad</a></li>
                       <li><a href="#">Autonomía Personal y Dependencia</a></li>
                       <li><a href="#">Envejecimiento activo</a></li>
@@ -70,6 +80,7 @@
                       <li><a href="#">Más Información</a></li>
                     </ul>
                   </li>
+                  <li class="divider"></li>
                 </ul>
                 <!-- Right Nav -->
                 <ul class="right">
@@ -78,10 +89,11 @@
                   <li><a href="/imserso_01/auxiliares/direcciones/index.htm">Direcciones</a></li>
                   <li class="divider"></li>
                   <li><a href="/imserso_01/mas_informacion/enlaces_interes/index.htm">Enlaces</a></li>
+                  <li class="divider"></li>
                   <li class="has-form">
                     <div class="row collapse">
                       <div class="small-8 columns">
-                        <input type="text" placeholder="Buscar en Imserso" title="Buscar en Imserso">
+                        <input type="text" placeholder="Buscar en Imserso" title="Buscar en Imserso" role="search" aria-label="Buscar en Imserso">
                       </div>
                       <div class="small-4 columns">
                         <a href="#" class="button expand">Buscar</a>
@@ -96,7 +108,8 @@
       </div>
       <!-- Content -->
       <article class="row">
-      <section class="large-8 columns">
+      <section id="contenido" class="large-8 columns" class="row" role="main" aria-label="Contenidos de la página">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit laborum sequi voluptatem quod ullam ad atque odio voluptate quae. Voluptas distinctio ipsum magni in.</p>
         <ul class="slider">
           <li>
             <figure>
@@ -138,7 +151,7 @@
         <aside class="large-4 columns">
           <dl data-accordion="" class="accordion">
             <dd class="active">
-            <a href="#destacado">Destacado</a>
+            <a href="#destacado"><i class="fa fa-exclamation fa-fw"></i> Destacado</a>
             <div class="content active row" id="destacado">
               <div class="small-6 columns banners">
                 <ul class="">
@@ -159,31 +172,31 @@
             </div>
             </dd>
             <dd>
-            <a href="#a-directos">Accesos Directos</a>
+            <a href="#a-directos"><i class="fa fa-hand-o-right fa-fw"></i> Accesos Directos</a>
             <div class="content" id="a-directos">
               Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd >
-            <a href="#social">Síguenos en...</a>
+            <a href="#social"><i class="fa fa-twitter fa-fw"></i> Síguenos en...</a>
             <div class="content" id="social">
               Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd>
-            <a href="#servicios">Servicios</a>
+            <a href="#servicios"><i class="fa fa-gears fa-fw"></i> Servicios</a>
             <div class="content" id="servicios">
               Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd>
-            <a href="#visitado">Lo más visitado</a>
+            <a href="#visitado"><i class="fa fa-plus fa-fw"></i> Lo más visitado</a>
             <div class="content" id="visitado">
               Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             </dd>
             <dd>
-            <a href="#interes">Accesos de Interés</a>
+            <a href="#interes"><i class="fa fa-tag fa-fw"></i> Accesos de Interés</a>
             <div class="content" id="interes">
               Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
@@ -193,7 +206,7 @@
         </article>
       </div>
       <!-- footer -->
-      <footer>
+      <footer role="contentinfo" aria-label="Pie de página">
         <div class="large-12 columns">
           <p>Pie <br>de <br>página</p>
         </div>
@@ -226,6 +239,9 @@
       <!-- build:js js/app.min.js -->
       <script src="js/slick.js"></script>
       <script src="js/app.js"></script>
+      <script>
+          $(document).foundation();
+      </script>
       <!-- endbuild -->
     </body>
   </html>
